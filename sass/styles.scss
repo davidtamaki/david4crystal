@@ -252,18 +252,16 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/hero.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
+  .rsvp-wrap {
+    padding-bottom: 30px;
+  }
   .down-arrow a {
     color: $txt-light;
   }
@@ -278,11 +276,11 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    padding-top: 60%;
   }
   .hero-content img {
-    width: 55%;
-    margin-bottom: 12%;
+    width: 40%;
+    margin-bottom: 0%;
   }
 }
 .navigation {
@@ -293,7 +291,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgb(249, 232, 244);
   z-index: 999;
   width: 100%;
 }
@@ -367,17 +365,11 @@ header {
   color: #fff;
   font-size: 30px;
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* ==========================================================================
-Social share buttons
-========================================================================== */
-.share-bar {
-  margin-top: 20px;
-}
 
 /* ==========================================================================
 Intro
@@ -461,21 +453,6 @@ Features-stack
     padding-bottom: 0px;
     border-bottom: none;
   }
-  .ipad-wrap {
-    width: 706px;
-    height: 1002px;
-    background: url("../img/ipad-device.png") no-repeat center center;
-    z-index: 1;
-  }
-  .iphone-wrap {
-    width: 304px;
-    height: 620px;
-    background: url("../img/iphone6.png") no-repeat center center;
-    position: absolute;
-    left: 530px;
-    bottom: 129px;
-    z-index: 2;
-  }
   .device-showcase {
     position: absolute;
     bottom: -365px;
@@ -499,53 +476,6 @@ Features-stack
   .btn {
     margin-top: 20px;
   }
-  .macbook-wrap {
-    position: absolute;
-    width: 916px;
-    height: 540px;
-    background: url("../img/macbook-pro.png") no-repeat center center;
-    top: 114px;
-    z-index: 4;
-    left: 50%;
-  }
-}
-
-/* ==========================================================================
-.hero-strip
-========================================================================== */
-.hero-strip {
-  margin-top: 120px;
-  background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
-  padding-bottom: 190px;
-  position: relative;
-
-  i {
-    font-family: $accent-font;
-    font-weight: 300;
-    font-size: 25px;
-    color: #F69D52;
-    vertical-align: top;
-    margin-left: -8px;
-    font-style: normal;
-  }
-  h2 {
-    color: #fff;
-    margin: 0 0 20px 0;
-  }
-  p {
-    color: #ACB1B4;
-  }
-  .btn {
-    margin-top: 10px;
-  }
-  .logo-placeholder {
-    width: 230px;
-    height: 230px;
-    position: absolute;
-    bottom: -285px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 /* ==========================================================================
@@ -554,6 +484,10 @@ Features-stack
 .events {
   .leftcol {
     padding-right: 100px;
+    border-right: solid 1px $keyline-color;
+  }
+  .midcol {
+    padding-right: 25;
     border-right: solid 1px $keyline-color;
   }
   .rightcol {
@@ -645,15 +579,6 @@ Features-stack
 }
 
 /* ==========================================================================
-Instagram
-========================================================================== */
-#instagram {
-  img {
-    width: 100%;
-  }
-}
-
-/* ==========================================================================
 Engagement Pics
 ========================================================================== */
 #eng-pics {
@@ -701,32 +626,16 @@ Engagement Pics
     filter: alpha(opacity=1);
     opacity: 1;
     z-index: 9; }
-  .diamond {
-    width: 230px;
-    height: 230px;
-    position: absolute;
-    bottom: -145px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 500;
-  }
-  .ring {
-    width: 75px;
-    height: 75px;
-    border-radius: 75px;
-    border: 10px solid #d0d3d4;
-    position: absolute;
-    left: 34%;
-    top: 75%;
-    z-index: -1;
-  }
+  // .pics-row {
+  //   display: flex;
+  // }
 }
 
 /* ==========================================================================
 Embed video
 ========================================================================== */
 #video-bg {
-  height: 300px;
+  height: 500px;
 }
 #video-content {
   width: 100%;
@@ -796,6 +705,9 @@ RSVP form
       width: 100%;
       font-size: 13px;
     }
+    .form-check {
+      text-align: left;
+    }
     .form-input-group {
       width: 100%;
       height: 55px;
@@ -821,12 +733,30 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
+      i.fa-user, i.fa-users, i.fa-hotel, i.fa-bus, i.fa-child, i.fa-cutlery, i.fa-plane, i.fa-car, i.fa-glass, i.fa-envelope, i.fa-lightbulb-o, .fa-key {
         font-size: 14px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         margin-left: 20px;
+      }
+      select {
+        padding-left: 68px;
+        width: 100%;
+        height: 100%;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: none;
+      }
+      textarea {
+        padding-left: 68px;
+        width: 100%;
+        height: 100%;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: none;
       }
       input {
         padding-left: 68px;
@@ -848,6 +778,10 @@ RSVP form
       }
       input:-ms-input-placeholder {
         color: $form-placeholder;
+      }
+      &-tall {
+        @extend .form-input-group;
+        height: 110px;
       }
     }
   }

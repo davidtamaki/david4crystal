@@ -1,6 +1,4 @@
 node_modules/
-*.min.js
-*.min.css
 .idea/
 *.iml
 .DS_Store

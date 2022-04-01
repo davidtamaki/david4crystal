@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 1024px) {
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 80%;
     }
 }
 
@@ -25,7 +25,7 @@
     }
 
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 80%;
     }
 
     .header-nav {
@@ -294,11 +294,11 @@
 
 @media screen and (max-width: 480px) {
     .hero .hero-content {
-        padding-top: 140%;
+        padding-top: 150%;
     }
     
     .hero .hero-content img {
-        width: 65%;
+        width: 100%;
     }
 
     .hero .btn {

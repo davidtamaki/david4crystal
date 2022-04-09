@@ -79,13 +79,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center rsvp-wrap">
-                <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a>
-            </div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div> -->
     </div>
     <!-- <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div> -->
 </section>
@@ -94,10 +87,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>We're getting married!</h3>
+                <h3>We're getting married</h3>
                 <p>
                     And you're invited to our Canarian wedding!
                 </p>
+            </div>
+            <div class="row">
+                <div class="text-center rsvp-wrap">
+                    <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a>
+                </div>
             </div>
         </div>
     </div>
@@ -266,7 +264,7 @@
             }">
         </div>
         <div id="video-content">
-            <h5>Beware of the Tenerife Monster!</h5>
+            <h5>RSVP now or face the wrath of the Tenerife Monster!</h5>
     </div>
 </section>
 
@@ -303,6 +301,10 @@
             <p>
                 Helen from Licandro weddings will be at the venue on the day – orchestrating all the operations with her husband, Juan as photographer. They have been amazing bringing this together from afar and are beautiful people inside and out so feel free to say ‘hello' to them on the big day!
             </p>
+            <h6><b>COVID Polciy</b></h6>
+            <p>
+                All guests are expected to be fully vaccinated. 
+            </p>
         </div>
     </div>
 </section>
@@ -318,6 +320,12 @@
                 Tenerife has some great beach bars, spas, hikes, climbs, go-karting, foodie jaunts, wine-tasting and…cactus ice-cream!
             </p>
             <h5>Where to stay:</h5>
+            <p>
+                We have limited accommodation on-site at the wedding venue (Granje de Bastian) for two nights: Friday 14th and Saturday 15th October. If you are interested in staying on-site, please mark your interest in the <a href="#rsvp">form</a> below. If you do get a spot on-site and are interested in staying in Tenerfie the following week, please book your accomodation from Sunday 16th October onwards!
+            </p>
+            <p>
+                If you do not get a spot on-site, we will also arrange for a shuttle bus to pick up / drop off guests from a central hotel in Costa Adeje. After the weekend festivities, we will also stay in Costa Adeje.
+            </p>
             <p>
                 With people staying until various dates we have chosen a set of hotels all within a few minutes walk of each other so that we can hang out together after the wedding. Or perhaps you'll do something so embarrassing at the wedding that you'll never want to face the wedding party again – your destiny is in your own hands.
             </p>
@@ -601,7 +609,7 @@
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn">
+                    <button class="btn-fill rsvp-btn" onclick="dataLayer.push({'event': 'form submit'});">
                         Submit
                     </button>
                 </form>
